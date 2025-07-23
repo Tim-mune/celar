@@ -20,7 +20,7 @@
 2. install the dependencies using any runtime i prefer bun for speed so enter this command >>bun install or if using yarn type yarn or npm install.
 3. makesure you have connected your device by usb cable.( counter check by entering adb devices on linux to show devices attached)
 4. run on your terminal cd android then ./gradlew clean && ./gradlew assembleRelease
-5. The app will be generated in the outputs and you can install the apk.
+5. The app will be generated in the outputs and you can install the apk. The path is as follows android/app/build/outputs/release and you will find the release apk here
 
 # Backend.
 
@@ -37,10 +37,12 @@ Then copy the link move to frontend and locate a file axios and add the link to 
 Then boom you can test the app.
 
 # Storage.
+
 Pstgres.
 sample .env
 DATABASE_URL="postgresql://user:password@localhost:5432/db-name?schema=public"
-JWT_SECRET="random characters" generated using openssl 
+JWT_SECRET="random characters" generated using openssl
+
 - openssl rand -base64 16
 
 # Transactions.
@@ -76,7 +78,21 @@ Expo Drawer Navigation (via Expo Router)
 
 ### Frontend
 
-
+frontend/celar/
+├── app/ // App entry and routing (Expo Router)
+├── assets/ // Static assets
+├── axios/ // Axios client and API setup
+├── components/ // Reusable UI components
+├── constants/ // Theme, enums, app constants
+├── hooks/ // Custom React hooks
+├── scripts/ // Helper scripts (if any)
+├── store/ // Zustand state store
+├── global.css
+├── tailwind.config.js
+├── nativewind-env.d.ts
+├── app.json
+├── package.json
+└── tsconfig.json
 
 ### Bakcend
 
