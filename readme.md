@@ -37,6 +37,11 @@ Then copy the link move to frontend and locate a file axios and add the link to 
 Then boom you can test the app.
 
 # Storage.
+Pstgres.
+sample .env
+DATABASE_URL="postgresql://user:password@localhost:5432/db-name?schema=public"
+JWT_SECRET="random characters" generated using openssl 
+- openssl rand -base64 16
 
 # Transactions.
 
@@ -71,21 +76,7 @@ Expo Drawer Navigation (via Expo Router)
 
 ### Frontend
 
-frontend/celar/
-├── app/ // App entry and routing (Expo Router)
-├── assets/ // Static assets
-├── axios/ // Axios client and API setup
-├── components/ // Reusable UI components
-├── constants/ // Theme, enums, app constants
-├── hooks/ // Custom React hooks
-├── scripts/ // Helper scripts (if any)
-├── store/ // Zustand state store
-├── global.css
-├── tailwind.config.js
-├── nativewind-env.d.ts
-├── app.json
-├── package.json
-└── tsconfig.json
+
 
 ### Bakcend
 
